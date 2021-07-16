@@ -13,7 +13,9 @@ function gfunction() {
 			  	if(checkbox.checked==false){
 			  		
 			  		 swal("Kindly fill the checkbox"," ","warning");
+			  		 setTimeout(function(){
 			  	      window.location.href="";
+			  	  },1800)
 			 }
 			 }
 
@@ -21,8 +23,9 @@ function gfunction() {
 			 var btn= document.getElementById("abd");
 			 var number=document.getElementById("quantity");
 			 if(number.value==""){
-			 	
+			 	  setTimeout(function(){
 			 	swal("Kindly answer the question"," ","warning");
+			 },1800);
 			 }
 			 else
 			 if(number.value>=99&&number.value<=101){
@@ -53,8 +56,11 @@ function gfunction() {
   }
   
   if (val == "" ) {
+
     swal("Kindly choose an option","Try Again","warning");
+        setTimeout(function(){
       window.location.href=""
+  },1800);
   } else if ( val == "Scripting" ) {
     swal("Correct Answer","You clicked this button","success");
     setTimeout(function(){
@@ -75,8 +81,10 @@ function gfunction() {
 			 var btn= document.getElementById("abd");
 			 var number=document.getElementById("quantity");
 			 if(number.value==""){
-			 	 swal("Kindly answer the question"," ","warning");
-			 }
+			 	   setTimeout(function(){
+			 	swal("Kindly answer the question"," ","warning");
+			 },1800);
+			 	}
 			 else
 			 if(number.value>=99&&number.value<=101){
 			  swal("Correct Answer","You clicked this button","success");
@@ -97,6 +105,9 @@ function gfunction() {
 			 var number=document.getElementById("quantity");
 			 if(number.value==""){
 			 	 swal("Kindly answer the question "," ","warning");
+			 	 setTimeout(function(){
+			 	 	window.location.href="";
+			 	 },1800);
 			 }
 			 else
 			 if(number.value>=99&&number.value<=101){
