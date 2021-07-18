@@ -28,9 +28,9 @@ function gfunction() {
 			 },1800);
 			 }
 			 else
-			 if(number.value>=99&&number.value<=101){
+			 if(number.value>=5990&&number.value<=6010){
 			 
-			  swal("Correct Answer","You clicked this button","success");
+			  swal("Correct Answer","Congratulations!!!!","success");
     setTimeout(function(){
     	
     window.location.href="secondpage.html"
@@ -61,8 +61,8 @@ function gfunction() {
         setTimeout(function(){
       window.location.href=""
   },1800);
-  } else if ( val == "Scripting" ) {
-    swal("Correct Answer","You clicked this button","success");
+  } else if ( val == "Programming" ) {
+    swal("Correct Answer","Congratulations !!!","success");
     setTimeout(function(){
     	
     window.location.href="thirdpage.html"
@@ -86,8 +86,8 @@ function gfunction() {
 			 },1800);
 			 	}
 			 else
-			 if(number.value>=99&&number.value<=101){
-			  swal("Correct Answer","You clicked this button","success");
+			 if(number.value>=12725&&number.value<=12775){
+			  swal("Correct Answer","Congratulations !!!","success");
     setTimeout(function(){
     	
     window.location.href="fourthpage.html"
@@ -110,8 +110,8 @@ function gfunction() {
 			 	 },1800);
 			 }
 			 else
-			 if(number.value>=99&&number.value<=101){
-			 swal("Correct Answer","You clicked this button","success");
+			 if(number.value>=4390&&number.value<=4410){
+			 swal("Correct Answer","Congratulations !!!","success");
     setTimeout(function(){
     	
     window.location.href="finalpage.html"
@@ -125,3 +125,35 @@ function gfunction() {
     );
                }			
            }
+            function sAnswer(){
+
+  var radios = document.getElementsByName('choice');
+  var val= "";
+  for (var i = 0, length = radios.length; i < length; i++) {
+      if (radios[i].checked) {
+         val = radios[i].value; 
+         break;
+       }
+  }
+  
+  if (val == "" ) {
+
+    swal("Kindly choose an option","Try Again","warning");
+        setTimeout(function(){
+      window.location.href=""
+  },1800);
+  } else if ( val == "Programming" ) {
+    swal("Correct Answer","Congratulations !!!","success");
+    setTimeout(function(){
+    	
+    window.location.href="finalpage2.html"
+},1800);
+   
+  } else {
+    swal("Incorrect answer","You clicked wrong answer","error");
+    setTimeout(function(){
+  	window.location.href=""
+  },2000
+    );
+}
+};
