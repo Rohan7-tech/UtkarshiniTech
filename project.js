@@ -157,3 +157,7 @@ function gfunction() {
     );
 }
 };
+function opAnswer(){
+ 	window.location.href="abcd.html";
+ }
+
